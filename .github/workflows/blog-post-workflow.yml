@@ -1,20 +1,20 @@
-name: Latest Blog Posts
+# name: Latest Blog Posts
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *"
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: "0 0 * * *"
 
-permissions:
-  contents: write
+# permissions:
+#   contents: write
 
-jobs:
-  update-readme-with-blog:
-    name: Update README with latest blog posts
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+# jobs:
+#   update-readme-with-blog:
+#     name: Update README with latest blog posts
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout
+#         uses: actions/checkout@v4
 
       # - name: Pull latest blog posts
       #   uses: gautamkrishnar/blog-post-workflow@master
